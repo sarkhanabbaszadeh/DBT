@@ -53,6 +53,7 @@ namespace DBT
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            yenileme();
             // TODO: This line of code loads data into the 'dBTDBDataSet.dbttable' table. You can move, or remove it, as needed.
             this.dbttableTableAdapter.Fill(this.dBTDBDataSet.dbttable);
 
