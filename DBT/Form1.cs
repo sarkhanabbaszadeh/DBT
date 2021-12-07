@@ -44,9 +44,9 @@ namespace DBT
             if (elaqe.State == ConnectionState.Closed)
                 elaqe.Open();
             SqlCommand emr = new SqlCommand("select * from dbttable", elaqe);
-            SqlDataAdapter da = new SqlDataAdapter(emr);
+            SqlDataAdapter datadap = new SqlDataAdapter(emr);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            datadap.Fill(dt);
             dataGridView1.DataSource = dt;
             elaqe.Close();
         }
